@@ -1,0 +1,1009 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="bg-violet-800  ">
+  <div class="container mx-auto flex justify-between items-center">
+    <nav class="mt-1 bg-violet-900 px-4 py-3 rounded-t-lg ">
+      <div class="w-10">
+        <a href="#" class="w-10">
+          <figure class="style__ImageWrapper-sc-__sc-1h9bp23-1 eOTACO sc-9dc252f9-1 GbPbP" shape="NORMAL" width="100%"
+            height="100%" data-testid="wrapper"><img data-testid="main-image"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA1MyAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2LjAzODQgOS4yNDAxOUMyNi4wMzg0IDYuNDk5OTkgMjMuODAxMiA0LjcxMjg5IDIwLjUxODIgNC43MTI4OUMxNy40MDc0IDQuNzEyODkgMTQuMTUwOSA2Ljk1MDA3IDE0LjE1MDkgMTEuOTI3NUMxNC4xNTA5IDE1LjcyNjcgMTYuNDU0MiAxOC41MzMxIDIwLjQyNTYgMTguNTMzMUMyMi42NjI3IDE4LjUzMzEgMjUuMTI1IDE3LjI2MjMgMjUuNzQ3MSAxNi4zODg2QzI1Ljc0NzEgMTYuMzg4NiAyNS4zMjM1IDE0Ljc0NzEgMjQuMTU4NiAxNC43NDcxQzIzLjU0OTcgMTQuNzQ3MSAyMy4wOTk2IDE0Ljk4NTQgMjIuNTk2NSAxNS4xODM5QzIyLjA4MDMgMTUuMzk1NyAyMS40NTgxIDE1LjU5NDMgMjAuNjYzOCAxNS41OTQzQzE5LjU1MTkgMTUuNTk0MyAxNy42NDU2IDE1LjE1NzUgMTcuNjQ1NiAxMi43NjE0QzE3LjY0NTYgMTIuNzYxNCAxOC41NDU4IDEzLjAyNjIgMjAuNTg0NCAxMy4wMjYyQzI0Ljk3OTMgMTMuMDM5NCAyNi4wMzg0IDExLjE4NjEgMjYuMDM4NCA5LjI0MDE5Wk0yMC42NTA2IDcuNjc4MTRDMjIuMTU5NyA3LjY3ODE0IDIyLjg4NzggOC40OTg4OCAyMi44ODc4IDkuMjUzNDNDMjIuODg3OCAxMC4xNDA0IDIyLjA5MzUgMTAuNzA5NiAyMC42NTA2IDEwLjcwOTZDMTguNTQ1OCAxMC43MDk2IDE3Ljc1MTUgMTAuNDE4NCAxNy43NTE1IDEwLjQwNTFDMTcuNzM4MyA5LjE0NzUzIDE4Ljc0NDQgNy42NzgxNCAyMC42NTA2IDcuNjc4MTRaIiBmaWxsPSIjRkZEMzAwIi8+CjxwYXRoIGQ9Ik0zNC4yMDYgMTUuNjIwNkMzMi42OTY5IDE1LjYyMDYgMzEuOTE1OSAxNC4zNDk4IDMxLjc3MDMgMTMuNzkzOEMzMS42MjQ2IDEzLjI1MTEgMzEuNTMyIDEyLjQ3IDMxLjUzMiAxMS42NjI1TDMxLjU1ODUgNy41NTg4NUgzMi42NTcyQzMzLjU0NDEgNy41NTg4NSAzNC4yMTkyIDcuMjk0MSAzNC43MDkgNi43Nzc4M0MzNS4xODU2IDYuMjYxNTUgMzUuNDM3MSA1LjU1OTk1IDM1LjQzNzEgNC42OTk1SDMxLjU3MTdMMzEuNTQ1MiAyLjg4NTkzQzMxLjU0NTIgMi4zMDM0NyAzMS41NDUyIDEuODQwMTUgMzEuNTU4NSAxLjQ4MjczQzMxLjU3MTcgMS4xMjUzMiAzMS41ODQ5IDAuODQ3MzI1IDMxLjU5ODIgMC42MzU1MjFDMzEuNjExNCAwLjQxMDQ4IDMxLjYzNzkgMC4yMjUxNTEgMzEuNjUxMSAwLjA5Mjc3MzRDMzAuNDczIDAuMDkyNzczNCAyOS41ODYgMC4zNDQyOTIgMjguOTYzOSAwLjg0NzMyNkMyOC4zNDE3IDEuMzUwMzYgMjguMDM3MiAyLjE3MTEgMjguMDM3MiAzLjMzNjAyTDI4LjAxMDcgMTIuNDE3MUMyOC4wMTA3IDE2LjEzNjkgMjkuNzg0NiAxOC41NTk0IDMzLjE3MzUgMTguNTU5NEMzNC44NDE0IDE4LjU1OTQgMzYuMDU5MyAxNy42NTkyIDM2LjA1OTMgMTYuMjk1OEMzNi4wNTkzIDE1LjgxOTIgMzUuOTkzMSAxNS41Njc3IDM1Ljk1MzQgMTUuNDA4OEMzNS42NDg5IDE1LjQ4ODMgMzUuMTA2MiAxNS42MjA2IDM0LjIwNiAxNS42MjA2WiIgZmlsbD0iI0ZGRDMwMCIvPgo8cGF0aCBkPSJNNDIuNjkxNyAxNS43OTIyQzQxLjkzNzIgMTUuNzkyMiA0MS40NjA2IDE1LjI0OTQgNDEuNDYwNiAxNC4zNDkzVjcuNzk2NThDNDEuNDYwNiA3LjIxNDEyIDQxLjQ2MDYgNi43NTA4IDQxLjQ3MzggNi4zOTMzOEM0MS40ODcxIDYuMDM1OTYgNDEuNTAwMyA1Ljc1Nzk3IDQxLjUxMzYgNS41NDYxN0M0MS41MjY4IDUuMzIxMTIgNDEuNTUzMyA1LjEzNTggNDEuNTY2NSA1LjAwMzQyQzQwLjM3NTEgNS4wMDM0MiAzOS40NzQ5IDUuMjU0OTMgMzguODUyOCA1Ljc1Nzk3QzM4LjIzMDYgNi4yNjEgMzcuOTI2MSA3LjA4MTc0IDM3LjkyNjEgOC4yNDY2NkwzNy44OTk3IDE0LjkxODVDMzcuODk5NyAxNy4zMDEzIDM5LjQzNTIgMTguNjI1IDQxLjM2NzkgMTguNTQ1NkM0Mi41ODU4IDE4LjQ5MjcgNDMuNjQ0OCAxNy45MjM0IDQzLjY0NDggMTYuNjM5NEM0My42NDQ4IDE2LjEwOTkgNDMuNTUyMiAxNS42NzMgNDMuNTUyMiAxNS42NzNDNDMuMjg3NCAxNS43MzkyIDQzLjA4ODggMTUuNzkyMiA0Mi42OTE3IDE1Ljc5MjJaIiBmaWxsPSIjRkZEMzAwIi8+CjxwYXRoIGQ9Ik01MS4zNjI1IDUuMDMwMjdDNTAuNjM0NCA1LjAzMDI3IDQ5Ljg5MzEgNS4xMDk3IDQ5LjE1MTggNS4yODE3OUM0OC40MTA1IDUuNDQwNjUgNDcuNzM1MyA1Ljc1ODM1IDQ3LjEzOTYgNi4yMjE2N0M0Ni41NDM5IDYuNjg0OTkgNDYuMDU0MSA3LjMyMDQgNDUuNjgzNSA4LjE0MTE0QzQ1LjMxMjggOC45NjE4OCA0NS4xMTQzIDEwLjAwNzcgNDUuMTE0MyAxMS4zMDVWMTUuMDUxMkM0NS4xMTQzIDE2LjIwMjkgNDUuMjU5OSAxNy4yNzUyIDQ1Ljk2MTUgMTcuODA0N0M0Ni43MTYgMTguMzg3MSA0Ny42MDMgMTguNDEzNiA0OC43ODExIDE4LjQxMzZDNDguNzY3OSAxOC4yOTQ1IDQ4Ljc0MTQgMTcuOTYzNSA0OC43MjgyIDE3LjczODVDNDguNzE0OSAxNy41MjY3IDQ4LjY4ODQgMTcuMjQ4NyA0OC42ODg0IDE2Ljg5MTNDNDguNjc1MiAxNi41MzM5IDQ4LjY3NTIgMTYuMDcwNSA0OC42NzUyIDE1LjQ4ODFWMTAuNjgyOEM0OC42NzUyIDkuNTQ0MzQgNDguODYwNSA4LjA4ODE5IDUwLjg1OTQgNy45MTYxQzUxLjk4NDYgNy44MjM0NCA1Mi45Nzc1IDcuMzg2NTkgNTIuOTc3NSA2LjE2ODcyQzUyLjk3NzUgNS44OTA3MyA1Mi45MTEzIDUuMzQ3OTggNTIuNzY1NyA1LjAzMDI3SDUxLjM2MjVaIiBmaWxsPSIjRkZEMzAwIi8+CjxwYXRoIGQ9Ik02LjI0ODIxIDQuNzEyODlDMi4xNDQ1MSA0LjcxMjg5IDAgNy41ODU0OCAwIDExLjA4MDJDMCAxNC4zMTAyIDEuOTcyNDIgMTcuMzQxNyA1LjU1OTg1IDE3LjM0MTdDNy40MTMxMyAxNy4zNDE3IDguNDk4NjIgMTYuNTQ3NCA4Ljc2MzM4IDE2LjMyMjRWMTcuOTM3NEM4Ljc2MzM4IDE5Ljc5MDcgOC4wMzUzIDIxLjAzNSA2LjE2ODc4IDIxLjAzNUM1LjI2ODYyIDIxLjAzNSA0LjU5MzQ5IDIwLjc4MzUgMy45ODQ1NiAyMC40OTIzQzMuNDI4NTcgMjAuMjI3NSAzLjAxODIgMTkuOTIzIDIuNDc1NDYgMTkuOTIzQzEuMDg1NDkgMTkuOTIzIDAuNzAxNiAyMS42NDM5IDAuNzAxNiAyMS42NTcyQzEuNzQ3MzggMjMuMDA3NCA0LjE0MzQxIDI0LjAwMDMgNi4xNTU1NCAyNC4wMDAzQzEwLjExMzYgMjQuMDAwMyAxMi4yOTc4IDIxLjY5NjkgMTIuMjk3OCAxNy4xMTY2QzEyLjI5NzggMTcuMTE2NiAxMi4yOTc4IDEyLjUwOTkgMTIuMjk3OCAxMS43NTU0QzEyLjI4NDYgNy41NzIyNCAxMC40MzEzIDQuNzEyODkgNi4yNDgyMSA0LjcxMjg5Wk02LjIzNDk3IDE0LjIzMDhDNC42OTkzOSAxNC4yMzA4IDMuNTIxMjQgMTMuMjY0NSAzLjUyMTI0IDExLjEzMzJDMy41MjEyNCA4Ljg1NjMgNC43MjU4NyA3LjY3ODE0IDYuMjM0OTcgNy42NzgxNEM3LjcxNzYgNy42NzgxNCA4LjgwMzA5IDguNTc4MzEgOC44MDMwOSAxMC45NjExQzguODAzMDkgMTMuMzk2OCA3LjYyNDkzIDE0LjIzMDggNi4yMzQ5NyAxNC4yMzA4WiIgZmlsbD0iI0ZGRDMwMCIvPgo8cGF0aCBkPSJNMzguNzk5NyAzLjY5MzMzQzM5LjA3NzcgMy44MjU3MSAzOS4zNjg5IDMuOTA1MTMgMzkuNjg2NiAzLjkwNTEzQzQwLjQxNDcgMy45MDUxMyA0MC45ODM5IDMuNTYwOTUgNDEuNDA3NSAyLjg3MjU5QzQxLjU3OTYgMi41NTQ4OCA0MS42NzIzIDIuMjIzOTQgNDEuNjcyMyAxLjg2NjUyQzQxLjY3MjMgMS41MzU1OCA0MS41OTI5IDEuMjE3ODcgNDEuNDM0IDAuOTEzNDA2QzQxLjI3NTEgMC42MjIxNzYgNDEuMDM2OSAwLjM5NzEzNCA0MC43MTkyIDAuMjM4MjgyQzQwLjQ0MTIgMC4wNzk0Mjg4IDQwLjE2MzIgMCAzOS44NTg3IDBDMzkuNTI3OCAwIDM5LjE5NjggMC4wOTI2NjQ5IDM4Ljg3OTEgMC4yNzc5OTNDMzguNTYxNCAwLjQ2MzMyMSAzOC4zMjMxIDAuNzI4MDc1IDM4LjEzNzggMS4wNTkwMkMzNy45NjU3IDEuMzUwMjUgMzcuODczIDEuNjk0NDMgMzcuODczIDIuMDY1MDlDMzcuODczIDIuMzk2MDMgMzcuOTUyNSAyLjcxMzc0IDM4LjExMTMgMi45OTE3M0MzOC4yNzAyIDMuMjgyOTYgMzguNTA4NSAzLjUyMTI0IDM4Ljc5OTcgMy42OTMzM1oiIGZpbGw9IiNGRkQzMDAiLz4KPC9zdmc+Cg=="
+              alt="Getir" shape="NORMAL" class="style__Image-sc-__sc-1h9bp23-0 jFLMaM"></figure>
+        </a>
+      </div>
+    </nav>
+    <nav class="">
+      <a href="#" class="text-white text-sm  sm:text-base px-3">
+        <i class=" hidden sm:!inline-block fa-solid fa-globe pe-2"></i> Türkçe(TR)
+      </a>
+      <a href="#" class="text-white  text-sm  sm:text-base  px-3">
+        <i class=" hidden sm:!inline-block fa-solid fa-user pe-2"></i> Giriş Yap
+      </a>
+      <a href="#" class="text-white  text-sm  sm:text-base px-3 ">
+        <i class="hidden sm:! fa-solid fa-user-plus pe-2"></i> Kayıt Ol
+      </a>
+     
+    </nav>
+
+  </div>
+</div>
+
+
+
+<!-- Carousel wrapper -->
+<div id="default-carousel"
+  class="relative w-full z-10  hidden  lg:block   h-full before:bg-gradient-to-r before:from-violet-600 before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-40"
+  data-carousel="slide">
+  <div class="relative overflow-hidden py-36 " style="height: 550px;">
+    <div class="absolute z-50 flex w-full">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2  w-full ">
+          <div class=" h-full flex items-start flex-col justify-center">
+            <img data-testid="main-image"
+              src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" alt="Logo"
+              shape="NORMAL" class=" pb-7 style__Image-sc-__sc-1h9bp23-0 ezAmPr">
+            <a href="" class="text-white font-bold text-4xl ">
+              Dakikalar içinde kapında
+            </a>
+          </div>
+          <div class="flex justify-end">
+          <div class="bg-white rounded-md w-96  py-7 px-10 ">
+            <div class=" flex justify-between items-stretch h-full flex-col">
+              <a href="#" class="text-violet-900 text-center ">Giriş Yap veya Kayıt Ol</a>
+              <form class="lg:max-w-sm mx-auto">
+                <div class="flex items-center">
+                  <button id="dropdown-phone-button" data-dropdown-toggle="dropdown-phone"
+                    class="  flex-shrink-0 z-10 inline-flex items-center px-4 py-4 text-sm font-medium text-center text-gray-900  border border-gray-300  rounded hover:bg-gray-200  focus:outline-violet-800 focus:outline-1 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                    type="button">
+                    <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15">
+                      <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                      <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                        maskUnits="userSpaceOnUse">
+                        <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                      </mask>
+                      <g mask="url(#a)">
+                        <path fill="#D02F44" fill-rule="evenodd"
+                          d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                          clip-rule="evenodd" />
+                        <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                        <g filter="url(#filter0_d_343_121520)">
+                          <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                            d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                            clip-rule="evenodd" />
+                        </g>
+                      </g>
+                      <defs>
+                        <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433" y2="6.1"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#fff" />
+                          <stop offset="1" stop-color="#F0F0F0" />
+                        </linearGradient>
+                        <filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433"
+                          color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                          <feOffset dy="1" />
+                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                          <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520" />
+                          <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+                    +1 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 4 4 4-4" />
+                    </svg>
+                  </button>
+                  <div id="dropdown-phone" class="z-10 hidden
+                 bg-white divide-y divide-gray-100 rounded-lg shadow w-52 
+                 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-phone-button">
+                      <li>
+                        <button type="button"
+                          class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                          role="menuitem">
+                          <div class="inline-flex items-center">
+                            <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15">
+                              <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                maskUnits="userSpaceOnUse">
+                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              </mask>
+                              <g mask="url(#a)">
+                                <path fill="#D02F44" fill-rule="evenodd"
+                                  d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                  clip-rule="evenodd" />
+                                <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                <g filter="url(#filter0_d_343_121520)">
+                                  <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                                    d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                    clip-rule="evenodd" />
+                                </g>
+                              </g>
+                              <defs>
+                                <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433" y2="6.1"
+                                  gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#fff" />
+                                  <stop offset="1" stop-color="#F0F0F0" />
+                                </linearGradient>
+                                <filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433"
+                                  color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                  <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                  <feOffset dy="1" />
+                                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520" />
+                                  <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520" result="shape" />
+                                </filter>
+                              </defs>
+                            </svg>
+                            United States (+1)
+                          </div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button"
+                          class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                          role="menuitem">
+                          <div class="inline-flex items-center">
+                            <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15">
+                              <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                maskUnits="userSpaceOnUse">
+                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              </mask>
+                              <g mask="url(#a)">
+                                <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                <path fill="#fff" fill-rule="evenodd"
+                                  d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                                  clip-rule="evenodd" />
+                                <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667"
+                                  d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093" />
+                                <path fill="#E6273E" fill-rule="evenodd"
+                                  d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z" clip-rule="evenodd" />
+                              </g>
+                            </svg>
+                            United Kingdom (+44)
+                          </div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button"
+                          class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                          role="menuitem">
+                          <div class="inline-flex items-center">
+                            <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                maskUnits="userSpaceOnUse">
+                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              </mask>
+                              <g mask="url(#a)">
+                                <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                <path fill="#fff" stroke="#fff" stroke-width=".667"
+                                  d="M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z" />
+                                <path fill="url(#paint0_linear_374_135177)" fill-rule="evenodd"
+                                  d="M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z"
+                                  clip-rule="evenodd" />
+                                <path fill="url(#paint1_linear_374_135177)" fill-rule="evenodd"
+                                  d="M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z"
+                                  clip-rule="evenodd" />
+                                <path fill="#fff" fill-rule="evenodd"
+                                  d="M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z"
+                                  clip-rule="evenodd" />
+                              </g>
+                              <defs>
+                                <linearGradient id="paint0_linear_374_135177" x1="0" x2="0" y1=".5" y2="7.5"
+                                  gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#fff" />
+                                  <stop offset="1" stop-color="#F0F0F0" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_374_135177" x1="0" x2="0" y1=".5" y2="7.033"
+                                  gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#FF2E3B" />
+                                  <stop offset="1" stop-color="#FC0D1B" />
+                                </linearGradient>
+                              </defs>
+                            </svg>
+                            Australia (+61)
+                          </div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button"
+                          class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                          role="menuitem">
+                          <div class="inline-flex items-center">
+                            <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                              <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                maskUnits="userSpaceOnUse">
+                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              </mask>
+                              <g mask="url(#a)">
+                                <path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z"
+                                  clip-rule="evenodd" />
+                                <g filter="url(#filter0_d_374_135180)">
+                                  <path fill="#F01515" fill-rule="evenodd" d="M0 9.833h19.6V5.167H0v4.666z"
+                                    clip-rule="evenodd" />
+                                </g>
+                                <g filter="url(#filter1_d_374_135180)">
+                                  <path fill="#FFD521" fill-rule="evenodd" d="M0 14.5h19.6V9.833H0V14.5z"
+                                    clip-rule="evenodd" />
+                                </g>
+                              </g>
+                              <defs>
+                                <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0" y="5.167"
+                                  color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                  <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                  <feOffset />
+                                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                                  <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                                </filter>
+                                <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0" y="9.833"
+                                  color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                  <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                  <feOffset />
+                                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                                  <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                                </filter>
+                              </defs>
+                            </svg>
+                            Germany (+49)
+                          </div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button"
+                          class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                          role="menuitem">
+                          <div class="inline-flex items-center">
+                            <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                              <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff" stroke="#F5F5F5"
+                                stroke-width=".5" rx="1.75" />
+                              <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                maskUnits="userSpaceOnUse">
+                                <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff" stroke="#fff"
+                                  stroke-width=".5" rx="1.75" />
+                              </mask>
+                              <g mask="url(#a)">
+                                <path fill="#F44653" d="M13.067.5H19.6v14h-6.533z" />
+                                <path fill="#1035BB" fill-rule="evenodd" d="M0 14.5h6.533V.5H0v14z"
+                                  clip-rule="evenodd" />
+                              </g>
+                            </svg>
+                            France (+33)
+                          </div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button"
+                          class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                          role="menuitem">
+                          <div class="inline-flex items-center">
+                            <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                              <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                maskUnits="userSpaceOnUse">
+                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                              </mask>
+                              <g mask="url(#a)">
+                                <path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z"
+                                  clip-rule="evenodd" />
+                                <g filter="url(#filter0_d_374_135180)">
+                                  <path fill="#F01515" fill-rule="evenodd" d="M0 9.833h19.6V5.167H0v4.666z"
+                                    clip-rule="evenodd" />
+                                </g>
+                                <g filter="url(#filter1_d_374_135180)">
+                                  <path fill="#FFD521" fill-rule="evenodd" d="M0 14.5h19.6V9.833H0V14.5z"
+                                    clip-rule="evenodd" />
+                                </g>
+                              </g>
+                              <defs>
+                                <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0" y="5.167"
+                                  color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                  <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                  <feOffset />
+                                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                                  <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                                </filter>
+                                <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0" y="9.833"
+                                  color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                  <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                  <feOffset />
+                                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                                  <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                                </filter>
+                              </defs>
+                            </svg>
+                            Germany (+49)
+                          </div>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <label for="phone-input" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Phone
+                    number:</label>
+                  <div class="relative ps-3 w-full">
+                    <input type="phone" id="phone-input" class="block p-2.5 focus:outline-violet-600 w-full  z-20 text-sm rounded px-4 py-4
+                   text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500
+                    focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600
+                     dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                  </div>
+                </div>
+              </form>
+              <button type="button"
+                class="focus:outline-none duration-150 text-violet-800 bg-yellow-300 hover:bg-violet-900 hover:text-yellow-300 font-semibold rounded-lg text-sm px-5 py-2.5 mb-2 font-sans">
+                Telefon numarası ile devam et
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <!-- Item 1 -->
+    <div class="hidden duration-700 ease-in-out " data-carousel-item>
+      <img src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg"
+        class="absolute block w-full g -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover h-full object-cover	"
+        alt="...">
+
+    </div>
+    <!-- Item 2 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover h-full object-cover	"
+        alt="...">
+    </div>
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover h-full object-cover	"
+        alt="...">
+    </div>
+    <!-- Item 4 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-3.jpg"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover h-full object-cover	"
+        alt="...">
+    </div>
+    <!-- Item 5 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover h-full object-cover	"
+        alt="...">
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto block lg:hidden">
+      <div class=" flex justify-between items-stretch h-full flex-col">
+        <a href="#" class="text-violet-900 text-center my-3">Giriş Yap veya Kayıt Ol</a>
+        <form class=" w-full lg:max-w-sm lg:mx-auto">
+          <div class="flex items-center">
+            <button id="dropdown-phone-button" data-dropdown-toggle="dropdown-phone"
+              class="  flex-shrink-0 z-10 inline-flex items-center px-4 py-4 text-sm font-medium text-center text-gray-900  border border-gray-300  rounded hover:bg-gray-200  focus:outline-violet-800 focus:outline-1 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+              type="button">
+              <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15">
+                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                  maskUnits="userSpaceOnUse">
+                  <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                </mask>
+                <g mask="url(#a)">
+                  <path fill="#D02F44" fill-rule="evenodd"
+                    d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                    clip-rule="evenodd" />
+                  <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                  <g filter="url(#filter0_d_343_121520)">
+                    <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                      d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                      clip-rule="evenodd" />
+                  </g>
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433" y2="6.1"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff" />
+                    <stop offset="1" stop-color="#F0F0F0" />
+                  </linearGradient>
+                  <filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433"
+                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                    <feOffset dy="1" />
+                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                    <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520" />
+                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+              +1 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+            <div id="dropdown-phone" class="z-10 hidden
+           bg-white divide-y divide-gray-100 rounded-lg shadow w-52 
+           dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-phone-button">
+                <li>
+                  <button type="button"
+                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                    role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2" viewBox="0 0 20 15">
+                        <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                          maskUnits="userSpaceOnUse">
+                          <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        </mask>
+                        <g mask="url(#a)">
+                          <path fill="#D02F44" fill-rule="evenodd"
+                            d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                            clip-rule="evenodd" />
+                          <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                          <g filter="url(#filter0_d_343_121520)">
+                            <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                              d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                              clip-rule="evenodd" />
+                          </g>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433" y2="6.1"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#fff" />
+                            <stop offset="1" stop-color="#F0F0F0" />
+                          </linearGradient>
+                          <filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433"
+                            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset dy="1" />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520" />
+                            <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520" result="shape" />
+                          </filter>
+                        </defs>
+                      </svg>
+                      United States (+1)
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button type="button"
+                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                    role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15">
+                        <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                          maskUnits="userSpaceOnUse">
+                          <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        </mask>
+                        <g mask="url(#a)">
+                          <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                          <path fill="#fff" fill-rule="evenodd"
+                            d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                            clip-rule="evenodd" />
+                          <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667"
+                            d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093" />
+                          <path fill="#E6273E" fill-rule="evenodd"
+                            d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z" clip-rule="evenodd" />
+                        </g>
+                      </svg>
+                      United Kingdom (+44)
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button type="button"
+                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                    role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                          maskUnits="userSpaceOnUse">
+                          <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        </mask>
+                        <g mask="url(#a)">
+                          <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                          <path fill="#fff" stroke="#fff" stroke-width=".667"
+                            d="M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z" />
+                          <path fill="url(#paint0_linear_374_135177)" fill-rule="evenodd"
+                            d="M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z"
+                            clip-rule="evenodd" />
+                          <path fill="url(#paint1_linear_374_135177)" fill-rule="evenodd"
+                            d="M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z"
+                            clip-rule="evenodd" />
+                          <path fill="#fff" fill-rule="evenodd"
+                            d="M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z"
+                            clip-rule="evenodd" />
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_374_135177" x1="0" x2="0" y1=".5" y2="7.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#fff" />
+                            <stop offset="1" stop-color="#F0F0F0" />
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_374_135177" x1="0" x2="0" y1=".5" y2="7.033"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FF2E3B" />
+                            <stop offset="1" stop-color="#FC0D1B" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      Australia (+61)
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button type="button"
+                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                    role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                        <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                          maskUnits="userSpaceOnUse">
+                          <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        </mask>
+                        <g mask="url(#a)">
+                          <path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z"
+                            clip-rule="evenodd" />
+                          <g filter="url(#filter0_d_374_135180)">
+                            <path fill="#F01515" fill-rule="evenodd" d="M0 9.833h19.6V5.167H0v4.666z"
+                              clip-rule="evenodd" />
+                          </g>
+                          <g filter="url(#filter1_d_374_135180)">
+                            <path fill="#FFD521" fill-rule="evenodd" d="M0 14.5h19.6V9.833H0V14.5z"
+                              clip-rule="evenodd" />
+                          </g>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0" y="5.167"
+                            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                            <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                          </filter>
+                          <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0" y="9.833"
+                            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                            <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                          </filter>
+                        </defs>
+                      </svg>
+                      Germany (+49)
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button type="button"
+                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                    role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                        <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff" stroke="#F5F5F5"
+                          stroke-width=".5" rx="1.75" />
+                        <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                          maskUnits="userSpaceOnUse">
+                          <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff" stroke="#fff"
+                            stroke-width=".5" rx="1.75" />
+                        </mask>
+                        <g mask="url(#a)">
+                          <path fill="#F44653" d="M13.067.5H19.6v14h-6.533z" />
+                          <path fill="#1035BB" fill-rule="evenodd" d="M0 14.5h6.533V.5H0v14z"
+                            clip-rule="evenodd" />
+                        </g>
+                      </svg>
+                      France (+33)
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button type="button"
+                    class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                    role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                        <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                          maskUnits="userSpaceOnUse">
+                          <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                        </mask>
+                        <g mask="url(#a)">
+                          <path fill="#262626" fill-rule="evenodd" d="M0 5.167h19.6V.5H0v4.667z"
+                            clip-rule="evenodd" />
+                          <g filter="url(#filter0_d_374_135180)">
+                            <path fill="#F01515" fill-rule="evenodd" d="M0 9.833h19.6V5.167H0v4.666z"
+                              clip-rule="evenodd" />
+                          </g>
+                          <g filter="url(#filter1_d_374_135180)">
+                            <path fill="#FFD521" fill-rule="evenodd" d="M0 14.5h19.6V9.833H0V14.5z"
+                              clip-rule="evenodd" />
+                          </g>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0" y="5.167"
+                            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                            <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                          </filter>
+                          <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0" y="9.833"
+                            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_374_135180" />
+                            <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180" result="shape" />
+                          </filter>
+                        </defs>
+                      </svg>
+                      Germany (+49)
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <label for="phone-input" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Phone
+              number:</label>
+            <div class="relative ps-3 w-full">
+              <input type="phone" id="phone-input" class="block p-2.5 focus:outline-violet-600 w-full  z-20 text-sm rounded px-4 py-4
+             text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500
+              focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600
+               dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            </div>
+          </div>
+        </form>
+        <button type="button"
+          class="focus:outline-none duration-150 my-3 text-violet-800 bg-yellow-300 hover:bg-violet-900 hover:text-yellow-300 font-semibold rounded-lg text-sm px-5 py-2.5 mb-2 font-sans">
+          Telefon numarası ile devam et
+        </button>
+      </div>
+</div>
+
+
+
+
+<section class="py-4">
+
+  <div class="container mx-auto">
+    <span class="font-semibold">
+      Kategoriler
+    </span>
+
+    <div class=" grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-y-6 gap-x-4">
+
+      <div class="flex flex-col justify-center  items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/f9b26950-a462-49b2-9536-e8a383194182.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center  items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/13a7fc68-fc66-45fb-abf3-a9dfb299cfda.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center  items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/d3b6744b-1ebd-409f-8073-4cf17b97a8c7.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/12234b89-0519-41d1-baf3-b70728620247.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/8443c38b-cc06-4997-a50d-92c4b3df9817.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/f9b26950-a462-49b2-9536-e8a383194182.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center  items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/13a7fc68-fc66-45fb-abf3-a9dfb299cfda.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center  items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/d3b6744b-1ebd-409f-8073-4cf17b97a8c7.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center  items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/12234b89-0519-41d1-baf3-b70728620247.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/8443c38b-cc06-4997-a50d-92c4b3df9817.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/f9b26950-a462-49b2-9536-e8a383194182.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/13a7fc68-fc66-45fb-abf3-a9dfb299cfda.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/d3b6744b-1ebd-409f-8073-4cf17b97a8c7.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/12234b89-0519-41d1-baf3-b70728620247.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img class="max-w-full h-12 w-12"
+          src="https://market-product-images-cdn.getirapi.com/category/8443c38b-cc06-4997-a50d-92c4b3df9817.png" alt="">
+        <a href="">
+          Su & İçecek
+        </a>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-12">
+  <div class="container mx-auto">
+    <div class="pt-6  pb-4 lg:!pb-0 pl-0 lg:pl-16 rounded-lg"
+      style="background-image: url('https://cdn.getir.com/getirweb-images/common/illustration/doodle.png');">
+      <div class="grid grid-cols-1 lg:grid-cols-2  ">
+        <div>
+          <div class="flex flex-col items-center  lg:!items-start justify-center pb-4">
+
+
+            <a class="text-white font-bold text-2xl " href="">
+              Getir'i indir!
+            </a>
+            <p class="text-white text-center lg:!text-start font-semibold text-lg py-4">
+              İstediğiniz ürünleri dakikalar içinde kapınıza <br> getirelim.
+            </p>
+          </div>
+          <div class="flex flex-col items-center  lg:items-start   lg:flex-row pt-4 ">
+            <img class="w-40 h-12" src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg"
+              alt="">
+            <img class="my-4 lg:!my-0 lg:mx-4 w-40 h-12"
+              src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg" alt="">
+            <img class=" w-40 h-12"
+              src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg"
+              alt="">
+          </div>
+        </div>
+        <div class="justify-end hidden lg:flex">
+        <img class="max-w-full h-100 w-100 object-contain  lg:block hidden"
+          src="https://cdn.getir.com/getirweb-images/common/landing/phoneLanding.png" alt="">
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="pb-12">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div class="flex justify-center items-center flex-col  py-16 shadow-lg rounded-lg px-2">
+        <img class="max-w-full h-full"
+          src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg" alt="">
+        <span class="font-semibold text-lg text-violet-800 ">
+          Her siparişine bir kampanya
+        </span>
+        <span class="text-gray-500 text-center">
+          Getir’de vereceğin her siparişe uygun bir kampanya bulabilirsin.
+        </span>
+      </div>
+      <div class="flex justify-center items-center flex-col  py-16 shadow-lg rounded-lg px-2">
+        <img class="max-w-full h-full"
+          src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg" alt="">
+        <span class="font-semibold text-lg text-violet-800 ">
+          Her siparişine bir kampanya
+        </span>
+        <span class="text-gray-500 text-center">
+          Getir’de vereceğin her siparişe uygun bir kampanya bulabilirsin.
+        </span>
+      </div>
+      <div class="flex justify-center items-center flex-col  py-16 shadow-lg rounded-lg px-2">
+        <img class="max-w-full h-full"
+          src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg" alt="">
+        <span class="font-semibold text-lg text-violet-800 ">
+          Her siparişine bir kampanya
+        </span>
+        <span class="text-gray-500 text-center">
+          Getir’de vereceğin her siparişe uygun bir kampanya bulabilirsin.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer>
+  <div class="container mx-auto">
+    <div class="grid  grid-cols-1  sm:grid-cols-2 lg:!grid-cols-5">
+      <div class="flex flex-col items-start justify-start">
+       <span class="text-violet-800 pb-3 text-lg">
+          Getiri indir !
+        </span>
+        </a>
+        <a href="" class="">
+          <img src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" alt="">
+        </a>
+        <a href="" class="py-3">
+          <img src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg" alt="">
+        </a>
+        <a href="" class="">
+          <img src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg" alt="">
+        </a>
+      </div>
+      <div class="flex flex-col items-start justify-start">
+        <span class="text-violet-800 pb-3 text-lg">
+          Getiri Keşfet
+        </span>
+        <ul>
+          <li class="py-1">Hakkımızda</li>
+          <li class="py-1">Kariyer</li>
+          <li class="py-1">Teknoloji Kariyerleri</li>
+          <li class="py-1">İletişim</li>
+          <li class="py-1">Sosyal Sorumluluk Projeleri</li>
+          <li class="py-1">Basın Bültenleri</li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-start justify-start">
+        <span class="text-violet-800 pb-3 text-lg">
+          Yardıma mı ihtiyacın var?
+        </span>
+        <ul>
+          <li class="py-1">Hakkımızda</li>
+          <li class="py-1">Kariyer</li>
+          <li class="py-1">Teknoloji Kariyerleri</li>
+          <li class="py-1">İletişim</li>
+          <li class="py-1">Sosyal Sorumluluk Projeleri</li>
+          <li class="py-1">Basın Bültenleri</li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-start justify-start">
+        <span class="text-violet-800 pb-3 text-lg">
+          İş Ortağımız Ol
+        </span>
+        <ul>
+          <li class="py-1">Hakkımızda</li>
+          <li class="py-1">Kariyer</li>
+          <li class="py-1">Teknoloji Kariyerleri</li>
+          <li class="py-1">İletişim</li>
+          
+          <li class="py-1">Teknoloji Kariyerleri</li>
+          
+        </ul>
+      </div>
+      <div class="flex justify-start lg:!justify-end items-center">
+      <div class="shadow-xl px-3 py-3">
+      <img src="https://cdn.getir.com/getirweb-images/common/etbis.png" alt="">
+    </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
+    <div class="flex just-center items-center justify-center sm:!justify-start ">
+      <span class="text-gray-500 font-serif">
+        © 2024 Getir
+      </span>
+
+        <li class="text-violet-800 text-sm px-2 ">Bilgi Toplumu Hizmetleri
+        </li>
+    </div>
+    <div class="flex items-center justify-center sm:!justify-end">
+      <i class="fa-brands fa-facebook text-gray-600 text-2xl"></i>
+      <i class="fa-brands fa-twitter text-gray-600 text-2xl px-3"></i>
+      <i class="fa-brands fa-instagram text-gray-600 text-2xl pe-5"></i>
+      <button class="text-gray-600 shadow-xl py-2 px-3">
+        <i class="fa-solid fa-globe text-gray-600"></i> Türkçe (TR)
+      </button>
+    </div>
+  </div>
+  </div>
+</footer>
+
+
+<script>
+  function NavIconOpen(){
+    let Navicon = document.getElementById('NavIcon')
+    Navicon.classList.toggle('block')
+  }
+</script>
+{% endblock content %}
